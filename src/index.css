@@ -1,10 +1,18 @@
 :root {
-  
+  --noir: #0B0B0A;
+  --noir_charbon: #151412;
+  --doree: #C9A227;
+  --doree_hover: #E2C15B;
+  --blanc_ivoire: #F4F0E8;
+  --gris: #918C83;
+
+  --cormorant: 'Cormorant Gramond';
+  --manrope: 'Manrope';
+
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
+  font-size: 18px;
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);

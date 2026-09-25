@@ -1,5 +1,6 @@
 * {
-  color: #ffffff;
+  color: var(--blanc_ivoire);
+  font-family: var(--manrope);
 }
 
 header {
@@ -7,12 +8,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: .5rem 2rem;
-  background-color: #000000;
+  background-color: var(--noir);
   position: sticky;
 }
 
 h1 {
   font-weight: 200;
+  font-family: var(--cormorant);   
 }
 
 ul {
@@ -27,11 +29,11 @@ li {
 
 li:hover{
   cursor: pointer;
-  background-color: #ffffff24;
+  background-color: var(--noir_charbon);
 }
 
 .chosen{
-  border-bottom: 0.2rem solid #E09200;
+  border-bottom: 0.2rem solid var(--doree);
 }
 
 a {
@@ -40,14 +42,15 @@ a {
 
 .book-table {
   padding:0.75rem;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
+  font-size: 1rem;
   border: none;
-  background-color: #E09200;
-  color: #ffffff;
+  background-color: var(--doree);
+  color: var(--blanc_ivoire);
   transition: background-color 0.3s ease-in-out;
 }
 
 .book-table:hover{
-  background-color: #F59F00;
+  background-color: var(--doree_hover);
   cursor: pointer;
 }

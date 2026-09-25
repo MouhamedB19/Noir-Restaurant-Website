@@ -1,0 +1,7 @@
+| Couleur   | Utilisation          |
+| --------- | -------------------- |
+| #0B0B0A | Fond principal       |
+| #151412 | Sections secondaires |
+| #fc9f12 | Doré champagne       |
+| #F2EEE7 | Texte principal      |
+| #8E877C | Texte secondaire     |
