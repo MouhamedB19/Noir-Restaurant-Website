@@ -1,8 +1,3 @@
-* {
-  color: var(--blanc_ivoire);
-  font-family: var(--manrope);
-}
-
 header {
   display: flex;
   justify-content: space-between;

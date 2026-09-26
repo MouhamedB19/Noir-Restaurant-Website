@@ -42,9 +42,7 @@
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+  
 }
 
 body {
@@ -60,4 +58,9 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+* {
+  color: var(--blanc_ivoire);
+  font-family: var(--manrope);
 }
