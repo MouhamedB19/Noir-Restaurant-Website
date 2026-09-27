@@ -7,7 +7,11 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
+}
+
+.sub-title-hero{
+    font-weight: 500;
 }
 
 .box-hero{
@@ -30,11 +34,19 @@
 }
 
 .btn-hero{
+    padding: 0.3rem 0;
     font-size: 1rem;
     display:flex;
-    align-items: baseline;
+    gap: 0.15rem;
+    align-items: flex-end;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+
 }
 
-path{
-    height: 100%;
+.btn-hero:hover{
+    border-bottom-color: var(--blanc_ivoire);
 }
+
+
+

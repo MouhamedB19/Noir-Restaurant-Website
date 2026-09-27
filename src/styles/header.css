@@ -39,6 +39,7 @@ a {
   padding:0.75rem;
   border-radius: 1.2rem;
   font-size: 1rem;
+  font-weight: 200;
   border: none;
   background-color: var(--doree);
   color: var(--blanc_ivoire);
