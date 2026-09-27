@@ -1,0 +1,12 @@
+.box-philosophy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-philosophy{
+    width: 20%;
+    height: 20%;
+    border-radius: 10%;
+   
+}
