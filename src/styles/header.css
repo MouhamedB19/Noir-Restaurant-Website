@@ -5,6 +5,7 @@ header {
   padding: .5rem 2rem;
   background-color: var(--noir);
   position: sticky;
+  top: 0;
 }
 
 h1 {

@@ -10,26 +10,29 @@ function Creations()
 {
     return(
         <>
-            <div className="box-creations">
-                <h2>Les créations du chef</h2>
+            <div className="container">
+                <div className="box-creations">
+                    <h2>Les créations du chef</h2>
+                </div>
+                <div className="grid-creations">
+                    <div className="creation-item">
+                        <img src={patisserie} alt="patisserie" />
+                    </div>
+                    <div className="creation-item">
+                        <img src={precision} alt="precision" />
+                    </div>
+                    <div className="creation-item">
+                        <img src={sauce} alt="sauce" />
+                    </div>
+                    <div className="creation-item">
+                        <img src={cooked} alt="cooked" />
+                    </div>
+                    <div className="creation-item">
+                        <img src={finished} alt="finished" />
+                    </div>
+                </div>
             </div>
-            <div className="grid-creations">
-                <div className="creation-item">
-                    <img src={patisserie} alt="patisserie" />
-                </div>
-                <div className="creation-item">
-                    <img src={precision} alt="precision" />
-                </div>
-                <div className="creation-item">
-                    <img src={sauce} alt="sauce" />
-                </div>
-                <div className="creation-item">
-                    <img src={cooked} alt="cooked" />
-                </div>
-                <div className="creation-item">
-                    <img src={finished} alt="finished" />
-                </div>
-            </div>
+            
         </>
     );
 }
