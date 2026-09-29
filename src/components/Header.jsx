@@ -5,7 +5,10 @@ function Header() {
     <>
 
       <header>
-        <h1 class="title">NOIR RESTAURANT</h1>
+        <h1 class="title">
+          NOIR RESTAURANT
+          <h3>CUISINE CONTEMPORAINE</h3>
+        </h1>
         <ul>
           <li class="chosen"><a href="#">Menu</a></li>
           <li><a href="#">Expérience</a></li>
