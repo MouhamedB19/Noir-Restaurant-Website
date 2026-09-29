@@ -6,7 +6,7 @@ function Philosophy() {
         <>
             <div className="box-philosophy">
                 <div className="left-box">
-                    <h2>
+                    <h2 className="title-section">
                         <h2 className="numero">01.</h2>
                         Notre philosophie
                     </h2>

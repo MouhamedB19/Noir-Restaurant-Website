@@ -12,7 +12,7 @@ function Creations()
         <>
             <div className="container">
                 <div className="box-creations">
-                    <h2>Les créations du chef</h2>
+                    <h2 className="title-section">Les créations du chef</h2>
                 </div>
                 <div className="grid-creations">
                     <div className="creation-item">

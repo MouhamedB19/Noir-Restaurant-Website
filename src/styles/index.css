@@ -64,3 +64,8 @@ body {
   color: var(--blanc_ivoire);
   font-family: var(--manrope);
 }
+
+.title-section{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
