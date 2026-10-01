@@ -6,8 +6,11 @@ import finished from '../assets/finished_dish.png'
 
 import '../styles/creations.css'
 
+
+
 function Creations()
-{
+{   
+
     return(
         <>
             <div className="container">
@@ -15,19 +18,25 @@ function Creations()
                     <h2 className="title-section">Les créations du chef</h2>
                 </div>
                 <div className="grid-creations">
+                    
                     <div className="creation-item">
+                        <div className="overlay"></div>
                         <img src={patisserie} alt="patisserie" />
                     </div>
                     <div className="creation-item">
+                        <div className="overlay"></div>
                         <img src={precision} alt="precision" />
                     </div>
                     <div className="creation-item">
+                        <div className="overlay"></div>
                         <img src={sauce} alt="sauce" />
                     </div>
                     <div className="creation-item">
+                        <div className="overlay"></div>
                         <img src={cooked} alt="cooked" />
                     </div>
                     <div className="creation-item">
+                        <div className="overlay"></div>
                         <img src={finished} alt="finished" />
                     </div>
                 </div>
