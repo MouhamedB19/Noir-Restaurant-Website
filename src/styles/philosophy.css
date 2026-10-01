@@ -7,10 +7,7 @@
     padding: 1rem;
 }
 
-.numero{
-    color: var(--doree);
-    margin: 0;
-}
+
 
 .img-philosophy{
     width: 20%;
@@ -22,10 +19,7 @@
     text-align: left;
 }
 
-.box-philosophy h2{
-    font-size: 2rem;
-    text-align: left;
-}
+
 
 .box-philosophy h3{
     color: var(--gris);

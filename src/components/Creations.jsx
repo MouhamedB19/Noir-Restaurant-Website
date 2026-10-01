@@ -13,34 +13,39 @@ function Creations()
 
     return(
         <>
-            <div className="container">
-                <div className="box-creations">
-                    <h2 className="title-section">Les créations du chef</h2>
-                </div>
-                <div className="grid-creations">
-                    
-                    <div className="creation-item">
-                        <div className="overlay"></div>
-                        <img src={patisserie} alt="patisserie" />
+            <div className="box-container">
+                <div className="creations-content">
+                    <div className="box-title">
+                        <h2 className="title-section">
+                            <h2 className="numero">02.</h2>
+                            Les créations du chef</h2>
                     </div>
-                    <div className="creation-item">
-                        <div className="overlay"></div>
-                        <img src={precision} alt="precision" />
-                    </div>
-                    <div className="creation-item">
-                        <div className="overlay"></div>
-                        <img src={sauce} alt="sauce" />
-                    </div>
-                    <div className="creation-item">
-                        <div className="overlay"></div>
-                        <img src={cooked} alt="cooked" />
-                    </div>
-                    <div className="creation-item">
-                        <div className="overlay"></div>
-                        <img src={finished} alt="finished" />
+                    <div className="grid-creations">
+                        
+                        <div className="creation-item">
+                            <div className="overlay"></div>
+                            <img src={patisserie} alt="patisserie" />
+                        </div>
+                        <div className="creation-item">
+                            <div className="overlay"></div>
+                            <img src={precision} alt="precision" />
+                        </div>
+                        <div className="creation-item">
+                            <div className="overlay"></div>
+                            <img src={sauce} alt="sauce" />
+                        </div>
+                        <div className="creation-item">
+                            <div className="overlay"></div>
+                            <img src={cooked} alt="cooked" />
+                        </div>
+                        <div className="creation-item">
+                            <div className="overlay"></div>
+                            <img src={finished} alt="finished" />
+                        </div>
                     </div>
                 </div>
             </div>
+            
             
         </>
     );
