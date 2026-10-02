@@ -1,0 +1,12 @@
+.box-experiences{
+    display: flex;
+    justify-content: center;
+}
+
+.card-experiences{
+    width: 40vw;
+}
+
+.card-experiences img{
+    width: 100%;
+}
