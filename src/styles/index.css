@@ -57,14 +57,16 @@ body {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  
 }
 
 * {
   color: var(--blanc_ivoire);
   font-family: var(--manrope);
-
+  box-sizing: border-box;
 }
+
+/* Global Styles */
 
 .title-section{
   font-size: 2rem;
@@ -76,4 +78,30 @@ body {
 .numero{
   color: var(--doree);
   margin: 0;
+}
+
+.overlay{
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  inset: 0;
+  cursor:pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 5%;
+
+}
+
+.btn-hero{
+  padding: 0.3rem 0;
+  display:inline-flex;
+  width: fit-content;
+  gap: 0.15rem;
+  align-items: flex-end;
+  border-bottom: 1px solid transparent;
+
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover{
+  border-bottom-color: var(--blanc_ivoire);
 }

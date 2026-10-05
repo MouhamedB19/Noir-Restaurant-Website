@@ -1,11 +1,27 @@
 .box-experiences{
+   background-color: var(--noir); 
+   padding: 1rem;
+}
+
+.content-experiences{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
+}
+
+.box-title-experiences{
+    text-align: left;
+    margin: 1rem 0;
+    
+}
+
+.box-title-experiences span{
+    font-size: 1.2rem;
 }
 
 .little{
-    width: 25vw;
+    width: 30vw;
 }
 
 .big{
@@ -15,16 +31,18 @@
 
 .card-experiences{
     margin: 0.5rem;
-    height: 35vh;
-    border-radius: 1rem;
+    height: 40vh;
+    border-radius: 5%;
     position: relative;
+    overflow: hidden;
+
 }
 
 .card-experiences img{
     display: block;
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    border-radius: 5%;
     object-fit:cover;
 }
 
@@ -39,9 +57,20 @@
     text-align: left;
     background-color: rgb(0,0,0);
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.label-section span{
+    color: var(--blanc_ivoire);
+    display: block;
 }
 
 .label{
     color: var(--blanc_ivoire);
     font-size: 1.2rem;
+    margin: 0.5rem 0;
 }
+

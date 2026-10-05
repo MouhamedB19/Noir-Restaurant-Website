@@ -33,19 +33,7 @@
     margin-bottom: 1rem;
 }
 
-.btn-hero{
-    padding: 0.3rem 0;
-    display:flex;
-    gap: 0.15rem;
-    align-items: flex-end;
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease;
 
-}
-
-.btn-hero:hover{
-    border-bottom-color: var(--blanc_ivoire);
-}
 
 
 
