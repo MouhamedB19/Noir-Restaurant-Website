@@ -39,7 +39,7 @@ function Experiences()
                         </div>
                         <img src={Chef} alt="" />
                     </div>
-                    <div className="card-experiences big">
+                    <div className="card-experiences medium">
                         <div className="overlay">
                             <div className="label-section">
                                 <h3 className="label">Dîner privé</h3>
