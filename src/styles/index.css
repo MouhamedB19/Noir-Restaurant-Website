@@ -105,3 +105,19 @@ body {
 .btn-hero:hover{
   border-bottom-color: var(--blanc_ivoire);
 }
+
+.btn-gold {
+  padding:0.75rem;
+  border-radius: 1.2rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border: none;
+  background-color: var(--doree);
+  color: var(--blanc_ivoire);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-gold:hover{
+  background-color: var(--doree_hover);
+  cursor: pointer;
+}

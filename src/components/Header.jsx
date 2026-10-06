@@ -16,7 +16,7 @@ function Header() {
           <li><a href="#">Temoignages</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <button class="book-table">Reserver une table</button>
+        <button class="btn-gold">Reserver une table</button>
       </header>
 
     </>
