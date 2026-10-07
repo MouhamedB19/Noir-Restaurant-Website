@@ -1,6 +1,12 @@
 import ReservationImage from '../assets/reservation_image.png'
 import '../styles/reservation.css'
 
+function DateAujourdhui()
+{
+    const today = new Date().toISOString().split("T")[0];
+    return today;
+}
+
 function Reservation()
 {
     return(
@@ -24,33 +30,33 @@ function Reservation()
                         <h3>Reserver une table</h3>
                         <form className="form-reservation">
                             <div className="infos-input">
-                                <div className="temps-inputs">
-                                    <div className="input-item">
-                                        <label htmlFor="date">Date</label> <br/> 
-                                        <input type="date" name="date" id="date" />
-                                    </div>
-                                    <div className="input-item">
-                                        <label htmlFor="heure">Heure</label><br/>
-                                        <input type="time" name="heure" id="heure" />
-                                    </div>
-                                    
+                                
+                                <div className="input-item">
+                                    <label htmlFor="date">Date</label> <br/> 
+                                    <input type="date" name="date" className="champ-reservation" value={DateAujourdhui()}/>
+                                </div>
+                                <div className="input-item">
+                                    <label htmlFor="convives">Convives</label><br/>
+                                    <input type="number" name="convives" className="champ-reservation" min="1" max="20" value="2" />  
                                 </div>
 
-                                <div className="context-inputs">
-                                    <div className="input-item">
-                                        <label htmlFor="convives">Convives</label><br/>
-                                        <input type="number" name="convives" id="convives" min="1" max="20" />  
-                                    </div>
-                                    <div className="input-item">                  
-                                        <label htmlFor="occasion">Occasion</label> <br />
-                                        <select name="occasions" className="liste-occasions">
-                                            <option value="anniversaire">Anniversaire</option>
-                                            <option value="mariage">Mariage</option>
-                                            <option value="reunion">Réunion</option>
-                                            <option value="autre">Autre</option>
-                                        </select>
-                                    </div>
+                                <div className="input-item">
+                                    <label htmlFor="heure">Heure</label><br/>
+                                    <input type="time" name="heure" className="champ-reservation" value={"20:00"}/>
                                 </div>
+                                        
+                                
+                                <div className="input-item">                  
+                                    <label htmlFor="occasion">Occasion</label> <br />
+                                    <select name="occasions" className="champ-reservation">
+                                        <option value="">Choisir</option>
+                                        <option value="anniversaire">Anniversaire</option>
+                                        <option value="mariage">Mariage</option>
+                                        <option value="reunion">Réunion</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                                
                             </div>
                             <button type="submit" className="btn-gold">Reserver</button>
                         </form>
