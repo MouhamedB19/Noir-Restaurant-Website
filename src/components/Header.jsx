@@ -1,5 +1,5 @@
 import '../styles/header.css'
-
+import BoutonDore from './composants_reutilisables/BoutonDore'
 function Header() {
   return (
     <>
@@ -16,7 +16,7 @@ function Header() {
           <li><a href="#">Temoignages</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <button class="btn-gold">Reserver une table</button>
+        <BoutonDore texte="Reserver une table" />
       </header>
 
     </>

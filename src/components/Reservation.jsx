@@ -1,6 +1,6 @@
 import ReservationImage from '../assets/reservation_image.png'
 import '../styles/reservation.css'
-
+import BoutonDore from './composants_reutilisables/BoutonDore'
 function DateAujourdhui()
 {
     const today = new Date().toISOString().split("T")[0];
@@ -58,7 +58,7 @@ function Reservation()
                                 </div>
                                 
                             </div>
-                            <button type="submit" className="btn-gold">Reserver</button>
+                            <BoutonDore texte="Reserver"/>
                         </form>
                     </div>
 
