@@ -4,6 +4,7 @@ import Philosophy from './components/Philosophy.jsx'
 import Creations from './components/Creations.jsx'
 import Experiences from './components/Experiences.jsx'
 import Reservation from './components/Reservation.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
 
@@ -12,9 +13,10 @@ function App() {
       <Header/>
       <Hero/>
       <Philosophy/>
-      <Creations />
+      <Creations/>
       <Experiences/>
       <Reservation/>
+      <Footer/>
     </>
   )
 }

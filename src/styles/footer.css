@@ -1,0 +1,43 @@
+footer{
+    background-color: var(--noir);
+}
+
+.infos-part{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 5rem auto;
+}
+
+.titre-part{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 1rem 0;
+}
+
+.infos-part div{
+    display: flex;
+    flex-direction: column;
+}
+
+.noir-infos{
+    text-align: left;
+}
+
+.nav-part{
+    align-items: center;
+}
+
+.nav-part ul{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-part a:hover{
+    color: var(--doree);
+}
+
+
+
