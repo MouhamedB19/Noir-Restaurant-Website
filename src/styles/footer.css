@@ -4,9 +4,9 @@ footer{
 
 .infos-part{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
-    margin: 5rem auto;
+    margin: 2rem auto;
 }
 
 .titre-part{
@@ -14,6 +14,7 @@ footer{
     font-size: 1.2rem;
     font-weight: 200;
     margin: 1rem 0;
+    color: var(--doree);
 }
 
 .infos-part div{
@@ -37,6 +38,13 @@ footer{
 
 .nav-part a:hover{
     color: var(--doree);
+}
+
+.social-part{
+    background-color: var(--doree);
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
