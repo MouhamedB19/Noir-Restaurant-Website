@@ -29,20 +29,26 @@ function Footer()
                     <div className="contact-horaires-part">
                         <div className="contact">
                             <h3 className="titre-part">Contact</h3>
-                            <span>{phone}</span>
-                            <span>{mail}</span>
-                            <span>{adresse}</span>
+                            <div className="infos">
+                                <span>{phone}</span>
+                                <span>{mail}</span>
+                                <span>{adresse}</span> 
+                            </div>
+                            
                         </div>
                         <div className="horaires">
                             <h3 className="titre-part">Horaires</h3>
-                            <span>{jours_horaires}</span>
-                            <span>{heures_horaires}</span>
+                            <div className="infos">
+                                <span>{jours_horaires}</span>
+                                <span>{heures_horaires}</span>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 <div className="social-part">
-                    <a href="#">Instagram</a>
-                    <a href="#">Mentions légales</a>
+                    <a href="#" class="instagram">Instagram</a>
+                    <a href="#" class="mentions-legales">Mentions légales</a>
                     <span>© 2026 NOIR</span>
                 </div>
             </footer>

@@ -12,6 +12,7 @@ function Reservation()
     return(
         <>
             <div className="reservation-container">
+                
                 <div className="image-part">
                     <img src={ReservationImage} alt=""/>
                 </div>
@@ -30,7 +31,6 @@ function Reservation()
                         <h3>Reserver une table</h3>
                         <form className="form-reservation">
                             <div className="infos-input">
-                                
                                 <div className="input-item">
                                     <label htmlFor="date">Date</label> <br/> 
                                     <input type="date" name="date" className="champ-reservation" value={DateAujourdhui()}/>
@@ -39,13 +39,10 @@ function Reservation()
                                     <label htmlFor="convives">Convives</label><br/>
                                     <input type="number" name="convives" className="champ-reservation" min="1" max="20" value="2" />  
                                 </div>
-
                                 <div className="input-item">
                                     <label htmlFor="heure">Heure</label><br/>
                                     <input type="time" name="heure" className="champ-reservation" value={"20:00"}/>
                                 </div>
-                                        
-                                
                                 <div className="input-item">                  
                                     <label htmlFor="occasion">Occasion</label> <br />
                                     <select name="occasions" className="champ-reservation">
@@ -56,13 +53,13 @@ function Reservation()
                                         <option value="autre">Autre</option>
                                     </select>
                                 </div>
-                                
                             </div>
                             <BoutonDore texte="Reserver"/>
                         </form>
                     </div>
-
                 </div>
+                
+                
             </div>
         </>
     );

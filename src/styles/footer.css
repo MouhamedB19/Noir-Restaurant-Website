@@ -3,10 +3,13 @@ footer{
 }
 
 .infos-part{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 920px;
+    align-items: start;
+    justify-content: center;
     margin: 2rem auto;
+    text-align: left;
 }
 
 .titre-part{
@@ -40,12 +43,31 @@ footer{
     color: var(--doree);
 }
 
+.infos{
+    margin: 0.5rem 0;
+}
+
 .social-part{
     background-color: var(--doree);
     padding: 0.5rem 0;
     display: flex;
     justify-content: space-evenly;
 }
+
+.social-part a{
+    transition: all 0.3s ease-in-out;
+    color: var(--blanc_ivoire);
+}
+
+.social-part a:hover{
+    color: var(--noir);
+}
+
+.mentions-legales:hover{
+    border-bottom: 1px solid var(--noir);
+}
+
+
 
 
 
