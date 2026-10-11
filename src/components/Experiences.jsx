@@ -7,50 +7,53 @@ import Decouvrir from "./composants_reutilisables/Decouvrir"
 function Experiences()
 {
     return (
-        <>
-            <div className="box-experiences">
-                <div className="box-title-experiences">
-                    <h2 className="title-section">
-                        <h2 className="numero">03.</h2>
-                        Expériences
-                    </h2>
-                    <span>
-                        Des moments pensés comme des créations. Parce qu'un dîner ne se résume pas à ce qui se trouve dans l'assiette.
-                    </span>
-                </div>
-                <div className="content-experiences">
-                    <div className="card-experiences little">
-                        <div className="overlay">
-                            <div className="label-section">
-                                <h3 className="label">Dîner signature</h3>
-                                <span>Une expérience gastronomique où chaque détail trouve sa place.</span>
-                                <Decouvrir label="Découvrir" lien="#"/>
-                            </div>
-                        </div>
-                        <img src={Signature} alt="" />
+        <>  
+            <section className="experiences">
+                <div className="box-experiences container">
+                    <div className="box-title-experiences">
+                        <h2 className="title-section">
+                            <h2 className="numero">03.</h2>
+                            Expériences
+                        </h2>
+                        <span>
+                            Des moments pensés comme des créations. Parce qu'un dîner ne se résume pas à ce qui se trouve dans l'assiette.
+                        </span>
                     </div>
-                    <div className="card-experiences big">
-                        <div className="overlay">
-                            <div className="label-section">
-                                <h3 className="label">À la table du chef</h3>
-                                <span>Découvrez les gestes, les produits et la passion qui donnent vie à chaque assiette.</span>
-                                <Decouvrir label="Découvrir" lien="#"/>
+                    <div className="content-experiences">
+                        <div className="card-experiences normal">
+                            <div className="overlay">
+                                <div className="label-section">
+                                    <h3 className="label">Dîner signature</h3>
+                                    <span>Une expérience gastronomique où chaque détail trouve sa place.</span>
+                                    <Decouvrir label="Découvrir" lien="#"/>
+                                </div>
                             </div>
+                            <img src={Signature} alt="" />
                         </div>
-                        <img src={Chef} alt="" />
-                    </div>
-                    <div className="card-experiences medium">
-                        <div className="overlay">
-                            <div className="label-section">
-                                <h3 className="label">Dîner privé</h3>
-                                <span>Une parenthèse privilégiée pour vos évènements les plus importants.</span>
-                                <Decouvrir label="Découvrir" lien="#"/>
+                        <div className="card-experiences normal">
+                            <div className="overlay">
+                                <div className="label-section">
+                                    <h3 className="label">À la table du chef</h3>
+                                    <span>Découvrez les gestes, les produits et la passion qui donnent vie à chaque assiette.</span>
+                                    <Decouvrir label="Découvrir" lien="#"/>
+                                </div>
                             </div>
+                            <img src={Chef} alt="" />
                         </div>
-                        <img src={Private} alt=""/>
+                        <div className="card-experiences big">
+                            <div className="overlay">
+                                <div className="label-section">
+                                    <h3 className="label">Dîner privé</h3>
+                                    <span>Une parenthèse privilégiée pour vos évènements les plus importants.</span>
+                                    <Decouvrir label="Découvrir" lien="#"/>
+                                </div>
+                            </div>
+                            <img src={Private} alt=""/>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </div> 
+            </section>
+            
         </>
     );
 }

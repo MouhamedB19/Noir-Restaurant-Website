@@ -1,6 +1,5 @@
-.creations-content{
-    margin: auto;
-    
+.creations{
+    background-color: var(--noir_charbon);
 }
 
 .box-container{
@@ -8,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--noir_charbon);
 }
 
 

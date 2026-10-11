@@ -1,8 +1,11 @@
+.philosophy{
+    background-color: var(--noir);
+}
+
 .box-philosophy{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--noir);
     font-weight: 300;
     padding: 1rem 0;
 }
