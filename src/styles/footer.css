@@ -1,13 +1,15 @@
-footer{
+.the-footer{
     background-color: var(--noir);
 }
 
-.infos-part{
+.infos-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 920px;
     align-items: start;
     justify-content: center;
+    gap: 2rem;
+    padding-block: 3rem;
     margin: 2rem auto;
     text-align: left;
 }
@@ -17,34 +19,42 @@ footer{
     font-size: 1.2rem;
     font-weight: 200;
     margin: 1rem 0;
+    letter-spacing: 0.1rem;
     color: var(--doree);
 }
 
-.infos-part div{
+.infos-col{
     display: flex;
     flex-direction: column;
 }
 
-.noir-infos{
-    text-align: left;
-}
 
-.nav-part{
-    align-items: center;
-}
-
-.nav-part ul{
+.infos-col ul{
     flex-direction: column;
     padding: 0;
     margin: 0;
 }
 
-.nav-part a:hover{
+.infos-col ul li{
+    padding:0.5rem 0;
+    text-align: left;
+}
+
+.infos-col a:hover{
     color: var(--doree);
+}
+
+.contact,.horaires{
+    text-align: center;
 }
 
 .infos{
     margin: 0.5rem 0;
+    
+}
+
+.infos span{
+    display: block;
 }
 
 .social-part{

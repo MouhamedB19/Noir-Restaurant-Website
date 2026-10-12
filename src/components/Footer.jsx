@@ -10,23 +10,23 @@ function Footer()
 
     return(
         <>
-            <footer>
-                <div className="infos-part">
-                    <div className="noir-infos">
+            <footer className="the-footer">
+                <div className="container infos-grid">
+                    <div className="infos-col">
                         <h3 className="titre-part">Noir</h3>
                         <span>Restaurant gastronomique</span>
                         <span>Paris</span>
                     </div>
-                    <div className="nav-part">
+                    <div className="infos-col">
                         <h3 className="titre-part">Navigation</h3>
                         <ul>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Créations</a></li>
-                            <li><a href="#">Expériences</a></li>
-                            <li><a href="#">Réservation</a></li>
+                            <li><a href="#philosophie">Notre philosophie</a></li>
+                            <li><a href="#creations">Les créations du chef</a></li>
+                            <li><a href="#experiences">Les expériences proposés</a></li>
+                            <li><a href="#reservations">Réservation d'une table au NOIR</a></li>
                         </ul>
                     </div>
-                    <div className="contact-horaires-part">
+                    <div className="infos-col">
                         <div className="contact">
                             <h3 className="titre-part">Contact</h3>
                             <div className="infos">
