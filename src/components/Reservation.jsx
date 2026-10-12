@@ -11,8 +11,7 @@ function Reservation()
 {
     return(
         <>
-            <div className="reservation-container">
-                
+            <section className="reservations">
                 <div className="image-part">
                     <img src={ReservationImage} alt=""/>
                 </div>
@@ -20,15 +19,15 @@ function Reservation()
                     <div className="box-introduction">
                         <h2 className="title-section">
                             <h2 className="numero">04.</h2>
-                            Reservations
+                            Réservations
                         </h2>
-                        <span>Votre table vous attend.</span>
+                        <span>Votre table vous attend. </span>
                         <span>
                             Une expérience pensée dans les moindres détails, à découvrir le temps d'un dîner.
                         </span>
                     </div>
                     <div className="box-reservation">
-                        <h3>Reserver une table</h3>
+                        <h3>Réserver une table</h3>
                         <form className="form-reservation">
                             <div className="infos-input">
                                 <div className="input-item">
@@ -54,13 +53,12 @@ function Reservation()
                                     </select>
                                 </div>
                             </div>
-                            <BoutonDore texte="Reserver"/>
+                            <BoutonDore texte="Réserver"/>
                         </form>
                     </div>
                 </div>
                 
-                
-            </div>
+            </section>
         </>
     );
 }
