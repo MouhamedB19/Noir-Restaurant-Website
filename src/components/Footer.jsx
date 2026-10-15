@@ -11,7 +11,7 @@ function Footer()
     return(
         <>
             <footer className="the-footer">
-                <div className="container infos-grid">
+                <div className="infos-grid">
                     <div className="infos-col">
                         <h3 className="titre-part">Noir</h3>
                         <span>Restaurant gastronomique</span>
@@ -22,8 +22,8 @@ function Footer()
                         <ul>
                             <li><a href="#philosophie">Notre philosophie</a></li>
                             <li><a href="#creations">Les créations du chef</a></li>
-                            <li><a href="#experiences">Les expériences proposés</a></li>
-                            <li><a href="#reservations">Réservation d'une table au NOIR</a></li>
+                            <li><a href="#experiences">Les expériences proposées</a></li>
+                            <li><a href="#reservations">Réservations</a></li>
                         </ul>
                     </div>
                     <div className="infos-col">
@@ -47,9 +47,12 @@ function Footer()
                     </div>
                 </div>
                 <div className="social-part">
-                    <a href="#" class="instagram">Instagram</a>
-                    <a href="#" class="mentions-legales">Mentions légales</a>
-                    <span>© 2026 NOIR</span>
+                    <div className="social-part-inner">
+                        <a href="#" class="instagram">Instagram</a>
+                        <a href="#" class="mentions-legales">Mentions légales</a>
+                        <span>© 2026 NOIR</span>
+                    </div>
+                    
                 </div>
             </footer>
         </>

@@ -10,7 +10,7 @@
     justify-content: center;
     gap: 2rem;
     padding-block: 3rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     text-align: left;
 }
 
@@ -23,7 +23,7 @@
     color: var(--doree);
 }
 
-.infos-col{
+.infos-col,.infos{
     display: flex;
     flex-direction: column;
 }
@@ -36,45 +36,61 @@
 }
 
 .infos-col ul li{
-    padding:0.5rem 0;
     text-align: left;
+    padding: 0;
+    margin: 0;
 }
+
+.infos-col span,.infos span,.infos-col ul li{
+    margin: 0.3rem 0;
+}
+
 
 .infos-col a:hover{
     color: var(--doree);
 }
 
-.contact,.horaires{
-    text-align: center;
-}
-
-.infos{
-    margin: 0.5rem 0;
-    
-}
 
 .infos span{
     display: block;
 }
 
-.social-part{
-    background-color: var(--doree);
-    padding: 0.5rem 0;
-    display: flex;
-    justify-content: space-evenly;
+.contact,.horaires{
+    display: block;
 }
 
-.social-part a{
+.social-part{
+    background-color: var(--doree);
+    padding: 1rem 0;
+}
+
+.social-part-inner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    max-width: 920px;
+    gap: 2rem;
+    margin-inline: auto;
+}
+
+
+.social-part-inner a,.social-part-inner span{
+    font-weight: 400;
+    justify-self: start; 
     transition: all 0.3s ease-in-out;
+    color: var(--noir);
+    font-size: 0.85rem;
+    letter-spacing: 0.05rem;
+    
+    
+}
+
+.social-part-inner a:hover{
     color: var(--blanc_ivoire);
 }
 
-.social-part a:hover{
-    color: var(--noir);
-}
-
 .mentions-legales:hover{
-    border-bottom: 1px solid var(--noir);
+    border-bottom: 1px solid var(--blanc_ivoire);
 }
 
 
