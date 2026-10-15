@@ -10,13 +10,13 @@ function Header() {
           <h3>CUISINE CONTEMPORAINE</h3>
         </h1>
         <ul>
-          <li class="chosen"><a href="#">Menu</a></li>
-          <li><a href="#">Expérience</a></li>
-          <li><a href="#">Chef</a></li>
-          <li><a href="#">Temoignages</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="chosen"><a href="#">Accueil</a></li>
+          <li><a href="#">Philosophie</a></li>
+          <li><a href="#">Créations</a></li>
+          <li><a href="#">Expériences</a></li>
+          <li><a href="#">Reservations</a></li>
         </ul>
-        <BoutonDore texte="Reserver une table" />
+        
       </header>
 
     </>
