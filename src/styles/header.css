@@ -6,6 +6,9 @@ header {
   background-color: var(--noir);
 }
 
+
+
+
 h1 {
   font-weight: 200;
   font-family: var(--cormorant);   
@@ -41,3 +44,18 @@ a {
   text-decoration: none;
 }
 
+.btn-burger{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .btn-burger{
+    display: block;
+  }
+
+  ul{
+    display: none;
+  }
+
+  
+}
