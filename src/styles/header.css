@@ -4,10 +4,8 @@ header {
   align-items: center;
   padding: .5rem 2rem;
   background-color: var(--noir);
+  max-width: 100vw;
 }
-
-
-
 
 h1 {
   font-weight: 200;
@@ -21,17 +19,17 @@ h3{
   font-weight: 200;
 }
 
-ul {
+.list-parts {
   display: flex;
 }
 
-li {
+.list-parts li {
   list-style-type: none;
   padding: 0.5rem 1rem;
   transition: border-bottom background-color 0.3s ease-in-out;
 }
 
-li:hover{
+.list-parts li:hover{
   cursor: pointer;
   background-color: var(--noir_charbon);
 }
@@ -53,9 +51,10 @@ a {
     display: block;
   }
 
-  ul{
+  .list-parts{
     display: none;
   }
 
   
+
 }

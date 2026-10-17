@@ -5,7 +5,7 @@
   --doree_hover: #E2C15B;
   --blanc_ivoire: #F4F0E8;
   --gris: #918C83;
-
+  --noir_overlay: rgba(0,0,0,0.5);
   --cormorant: 'Cormorant Garamond';
   --manrope: 'Manrope';
 
@@ -63,10 +63,21 @@ body {
 * {
   color: var(--blanc_ivoire);
   font-family: var(--manrope);
+
+}
+
+*,*::before,*::after{
   box-sizing: border-box;
 }
 
 /* Global Styles */
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+
 
 .title-section{
   font-size: 2rem;
@@ -81,7 +92,7 @@ body {
 }
 
 .overlay{
-  background-color: rgba(0,0,0,0.5);
+  background-color: var(--noir_overlay);
   position: absolute;
   inset: 0;
   cursor:pointer;
@@ -124,7 +135,13 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100vw;
   margin-inline: auto;
   padding-inline: clamp(1rem, 4vw, 3rem);
+}
+
+@media(min-width: 768px){
+  .burger-container{
+    display: block;
+  }
 }

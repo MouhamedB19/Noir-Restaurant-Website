@@ -1,5 +1,6 @@
 import '../styles/header.css'
-import BoutonDore from './composants_reutilisables/BoutonDore'
+import MenuBurger from './composants_reutilisables/MenuBurger.jsx'
+
 function Header() {
   return (
     <>
@@ -10,7 +11,7 @@ function Header() {
           NOIR RESTAURANT
           <h3>CUISINE CONTEMPORAINE</h3>
         </h1>
-        <ul>
+        <ul className="list-parts">
           <li class="chosen"><a href="#">Accueil</a></li>
           <li><a href="#">Philosophie</a></li>
           <li><a href="#">Créations</a></li>
@@ -34,7 +35,7 @@ function Header() {
           </svg>
         </button>
       </header>
-
+      <MenuBurger/>
     </>
   )
 }

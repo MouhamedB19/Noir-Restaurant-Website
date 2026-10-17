@@ -1,0 +1,15 @@
+.burger-container{
+    background-color: var(--noir_overlay);
+    opacity: 1;
+    display: none;
+}
+
+.burger-content{
+    width: 100%;
+}
+
+.nav-list{
+    margin-inline: auto;
+    max-width: 80vw;
+}
+
