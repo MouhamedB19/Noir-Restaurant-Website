@@ -29,6 +29,14 @@ header {
   display: none;
 }
 
+.title{
+  letter-spacing: 1px;
+}
+
+.title h3{
+  color: var(--doree);
+}
+
 @media (max-width: 768px) {
   .btn-burger{
     display: block;
@@ -38,6 +46,12 @@ header {
     display: none;
   }
 
-  
+  .title{
+    font-size: 1.67rem;
+  }
+
+  .title h3{
+    font-size: 1rem;
+  }
 
 }
