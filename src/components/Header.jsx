@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
 
-      <header>
+      <header className="container">
         
         <h1 class="title">
           NOIR RESTAURANT

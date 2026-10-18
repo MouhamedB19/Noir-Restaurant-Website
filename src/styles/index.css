@@ -77,7 +77,9 @@ ul{
   padding: 0;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 .title-section{
   font-size: 2rem;
@@ -140,8 +142,3 @@ ul{
   padding-inline: clamp(1rem, 4vw, 3rem);
 }
 
-@media(min-width: 768px){
-  .burger-container{
-    display: block;
-  }
-}

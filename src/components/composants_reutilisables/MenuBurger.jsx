@@ -7,8 +7,8 @@ function MenuBurger()
             <div className="burger-container">
                 <div className="burger-content">
                     <ul className="nav-list">
-                        <li class="chosen"><a href="#">Accueil</a></li>
-                        <li><a href="#">Philosophie</a></li>
+                        <li className="chosen"><a href="#">Accueil</a></li>
+                        <li><a href="#" >Philosophie</a></li>
                         <li><a href="#">Créations</a></li>
                         <li><a href="#">Expériences</a></li>
                         <li><a href="#">Reservations</a></li>
