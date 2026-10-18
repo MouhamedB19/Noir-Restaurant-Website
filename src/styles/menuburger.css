@@ -16,9 +16,3 @@
 .nav-list{
     width: fit-content;
 }
-
-@media(max-width: 768px){
-  .burger-container{
-    display: block;
-  }
-}
