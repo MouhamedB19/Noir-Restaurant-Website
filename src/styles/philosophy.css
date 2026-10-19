@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-around;
     font-weight: 300;
-    padding: 1rem 0;
+    padding-block: 1rem;
 }
 
 
@@ -18,7 +18,11 @@
     border-radius: 10%;
 }
 
-.left-box{
+.substitute{
+    display: none;
+}
+
+.philosophy-content{
     text-align: left;
 }
 
@@ -28,3 +32,31 @@
     color: var(--gris);
     font-weight: 200;
 }
+
+@media(max-width: 768px){
+    .img-philosophy{
+        object-fit: cover;
+        aspect-ratio: 16/9;
+        width: 100%;
+    }
+
+    .principal{
+        display: none;
+    }
+
+    .substitute{
+        display: block;
+    }
+
+    .main-title{
+        font-size: clamp(1.6rem, 7vw, 2.5rem);
+        overflow-wrap: normal;
+        letter-spacing: 2px;
+    } 
+
+    .numero{
+        margin-block: 0.5rem;
+    }
+    
+}
+
