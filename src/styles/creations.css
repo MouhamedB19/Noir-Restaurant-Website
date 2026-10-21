@@ -42,4 +42,8 @@
 }
 
 
-
+@media(max-width: 768px){
+    .grid-creations{
+        column-gap: 0.5rem;
+    }
+}

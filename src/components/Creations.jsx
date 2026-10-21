@@ -19,7 +19,8 @@ function Creations()
                         <div className="box-title">
                             <h2 className="title-section">
                                 <h2 className="numero">02.</h2>
-                                Les créations du chef</h2>
+                                Les créations du chef
+                            </h2>
                         </div>
                         <div className="grid-creations">
 
