@@ -8,7 +8,7 @@
   --noir_overlay: rgba(0,0,0,0.5);
   --cormorant: 'Cormorant Garamond';
   --manrope: 'Manrope';
-
+  --bg_inputs: #3b3b3b;
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;

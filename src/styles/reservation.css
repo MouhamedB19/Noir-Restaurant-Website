@@ -59,8 +59,6 @@
     margin: 1.25rem 0;
 }
 
-
-
 .champ-reservation{
     border-radius: 0.5rem;
     font-size: 1rem;
@@ -69,7 +67,8 @@
     height: 42px;
     border: none;
     transition: border 0.3s ease-in-out;
-    
+    background-color: var(--bg_inputs);
+    -webkit-appearance: none;
 }
 
 input:hover,select:hover{
@@ -81,4 +80,16 @@ input:hover,select:hover{
 label{
     color: var(--blanc_ivoire);
     font-size: 1rem;
+}
+
+@media(max-width: 768px){
+    .infos-input,.reservations{
+        display: block;
+    }
+
+    .input-item{
+        margin-bottom: 0.5rem;
+    }
+
+    
 }

@@ -18,7 +18,7 @@ function Reservation()
                 </div>
                 <div className="reservation-part">
                     <div className="box-introduction">
-                        <h2 className="title-section">
+                        <h2 className="title-section main-title">
                             <h2 className="numero">04.</h2>
                             Réservations
                         </h2>
