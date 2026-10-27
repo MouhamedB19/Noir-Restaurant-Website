@@ -77,3 +77,16 @@
     margin: 0.5rem 0;
 }
 
+@media(max-width: 768px){
+    .content-experiences{
+       display: block; 
+    }
+
+    .card-experiences{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    
+    
+}

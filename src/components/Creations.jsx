@@ -17,7 +17,7 @@ function Creations()
                 <div className="box-container container">
                     <div className="creations-content">
                         <div className="box-title">
-                            <h2 className="title-section">
+                            <h2 className="title-section main-title">
                                 <h2 className="numero">02.</h2>
                                 Les créations du chef
                             </h2>

@@ -27,7 +27,6 @@
 }
 
 
-
 .box-philosophy h3{
     color: var(--gris);
     font-weight: 200;
@@ -48,11 +47,6 @@
         display: block;
     }
 
-    .main-title{
-        font-size: clamp(1.6rem, 7vw, 2.5rem);
-        overflow-wrap: normal;
-        letter-spacing: 2px;
-    } 
 
     .numero{
         margin-block: 0.5rem;

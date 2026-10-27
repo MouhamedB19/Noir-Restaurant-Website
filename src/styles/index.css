@@ -156,3 +156,10 @@ h3{
   padding-inline: clamp(1rem, 4vw, 3rem);
 }
 
+@media(max-width: 768px){
+  .main-title{
+    font-size: clamp(1.6rem, 7vw, 2.5rem);
+    overflow-wrap: normal;
+    letter-spacing: 2px;
+  } 
+}
