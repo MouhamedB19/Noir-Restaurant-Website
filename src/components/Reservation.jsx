@@ -1,12 +1,8 @@
 import ReservationImage from '../assets/reservation_image.png'
 import '../styles/reservation.css'
 import BoutonDore from './composants_reutilisables/BoutonDore'
+import Temps from './fonctions_utilitaires/Temps.jsx'
 
-function DateAujourdhui()
-{
-    const today = new Date().toISOString().split("T")[0];
-    return today;
-}
 
 function Reservation()
 {
@@ -33,7 +29,7 @@ function Reservation()
                             <div className="infos-input">
                                 <div className="input-item">
                                     <label htmlFor="date">Date</label> <br/> 
-                                    <input type="date" name="date" className="champ-reservation" value={DateAujourdhui()}/>
+                                    <input type="date" name="date" className="champ-reservation" value={Temps.DateAujourdhui()}/>
                                 </div>
                                 <div className="input-item">
                                     <label htmlFor="convives">Convives</label><br/>

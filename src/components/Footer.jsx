@@ -1,4 +1,5 @@
 import '../styles/footer.css'
+import Temps from './fonctions_utilitaires/Temps.jsx'
 
 function Footer()
 {
@@ -48,9 +49,9 @@ function Footer()
                 </div>
                 <div className="social-part">
                     <div className="social-part-inner">
-                        <a href="#" class="instagram">Instagram</a>
-                        <a href="#" class="mentions-legales">Mentions légales</a>
-                        <span>© 2026 NOIR</span>
+                        <a href="#" className="instagram">Instagram</a>
+                        <a href="#" className="mentions-legales">Mentions légales</a>
+                        <span>© {Temps.AnneeActuelle()} NOIR</span>
                     </div>
                     
                 </div>
