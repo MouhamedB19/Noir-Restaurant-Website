@@ -93,6 +93,36 @@
     border-bottom: 1px solid var(--blanc_ivoire);
 }
 
+@media(max-width:768px){
+    .infos-grid{
+        display: block;
+        padding: 0;
+    }
+    .infos-col{
+        text-align: center;
+    }
+
+    .infos-col ul{
+        margin-inline: auto;
+        
+    }
+
+    .infos-col ul li{
+        text-align: center;
+    }
+    .social-part-inner{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-part-inner a,.social-part-inner span{
+        font-size: 1.1rem;
+    }
+
+    
+}
+
 
 
 
