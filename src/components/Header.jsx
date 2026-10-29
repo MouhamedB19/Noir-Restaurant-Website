@@ -1,7 +1,9 @@
 import '../styles/header.css'
 import MenuBurger from './composants_reutilisables/MenuBurger.jsx'
+import {useState} from 'react'
 
 function Header() {
+  const [menuOuvert, setMenuOuvert] = useState(false);
   return (
     <>
 
@@ -18,7 +20,7 @@ function Header() {
           <li><a href="#">Expériences</a></li>
           <li><a href="#">Reservations</a></li>
         </ul>
-        <button className='btn-burger'>
+        <button className='btn-burger' onClick={()=> setMenuOuvert(menuOuvert => !menuOuvert)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -35,7 +37,7 @@ function Header() {
           </svg>
         </button>
       </header>
-      <MenuBurger/>
+      <MenuBurger menu={menuOuvert}/>
     </>
   )
 }

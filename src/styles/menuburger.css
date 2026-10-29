@@ -1,7 +1,7 @@
 .burger-container{
     background-color: var(--noir_overlay);
     opacity: 1;
-    display: none;
+
 }
 
 .burger-content{
