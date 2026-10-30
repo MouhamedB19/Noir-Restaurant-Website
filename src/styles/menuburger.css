@@ -11,9 +11,12 @@
 .nav-list{
     margin-inline: auto;
     max-width: 80vw;
-}
-
-.nav-list{
     width: fit-content;
 }
+
+.nav-list li{
+    padding: 0.5rem;
+}
+
+
 
