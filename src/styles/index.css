@@ -125,7 +125,7 @@ h3{
   gap: 0.15rem;
   align-items: flex-end;
   border-bottom: 1px solid transparent;
-
+  animation: spawn 1s ease-in-out both;
   transition: all 0.3s ease;
 }
 
@@ -162,4 +162,13 @@ h3{
     overflow-wrap: normal;
     letter-spacing: 2px;
   } 
+}
+
+@keyframes spawn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

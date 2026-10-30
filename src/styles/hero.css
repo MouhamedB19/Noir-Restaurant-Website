@@ -30,6 +30,9 @@
     animation: spawn 1s ease-in-out forwards;
 }
 
+.sub-title-hero,.text-hero{
+    animation: spawn 1s ease-in-out 0.3s both;
+}
 
 .text-hero{
     margin-bottom: 1rem;
@@ -37,12 +40,5 @@
 
 
 
-@keyframes spawn{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
+
 
