@@ -16,6 +16,15 @@
     width: 20%;
     height: 20%;
     border-radius: 10%;
+    
+}
+
+.animation-left{
+    animation: spawnByLeft 1.5s ease-in-out forwards;
+}
+
+.animation-right{
+    animation: spawnByRight 1.5s ease-in-out forwards;
 }
 
 .substitute{
@@ -24,6 +33,7 @@
 
 .philosophy-content{
     text-align: left;
+    
 }
 
 

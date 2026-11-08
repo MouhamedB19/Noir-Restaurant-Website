@@ -22,17 +22,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
 }
 
 .title-hero{
     font-size: 5rem;
     margin: 0;
-    animation: spawn 1s ease-in-out forwards;
 }
 
-.sub-title-hero,.text-hero{
-    animation: spawn 1s ease-in-out 0.3s both;
+.animation-bottom{
+    animation: spawnFromBottom 1s ease-in-out both;
 }
+
 
 .text-hero{
     margin-bottom: 1rem;

@@ -164,11 +164,37 @@ h3{
   } 
 }
 
-@keyframes spawn{
+/*Animations*/
+
+@keyframes spawnFromBottom{
     from{
         opacity: 0;
+        transform: translateY(1rem);
     }
     to{
         opacity: 1;
+        transform: translateY(0);
     }
+}
+
+@keyframes spawnByLeft{
+  from{
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes spawnByRight{
+  from{
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
