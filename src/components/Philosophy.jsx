@@ -8,7 +8,7 @@ function Philosophy() {
     const [elementGauche, visibleGauche] = useReveal();
     const [elementDroite, visibleDroite] = useReveal();
     //const [chargee,setChargee] = useState(false);
-    const imageChargee = useLoaded({dishPhilosophy});
+    const imageChargee = useLoaded(dishPhilosophy);
     return (
         <>
             <section className="philosophy">
