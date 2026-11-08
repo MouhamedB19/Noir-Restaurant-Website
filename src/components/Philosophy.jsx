@@ -7,7 +7,7 @@ import useLoaded from './fonctions_utilitaires/useLoaded'
 function Philosophy() {
     const [elementGauche, visibleGauche] = useReveal();
     const [elementDroite, visibleDroite] = useReveal();
-    //const [chargee,setChargee] = useState(false);
+
     const imageChargee = useLoaded(dishPhilosophy);
     return (
         <>
