@@ -162,6 +162,29 @@ h3{
     overflow-wrap: normal;
     letter-spacing: 2px;
   } 
+
+  .infos-overlay{
+    opacity: 0;
+  }
+}
+
+.infos-overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--noir);
+  color: var(--blanc_ivoire);
+  text-align: left;
+  transition: opacity 0.3s ease;
+}
+
+.infos-overlay-titre{
+  font-size: 1.2rem;
+  color: var(--doree);
+  text-transform: uppercase;
+
 }
 
 /*Animations*/

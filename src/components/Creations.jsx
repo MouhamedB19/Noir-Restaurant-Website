@@ -12,7 +12,24 @@ import '../styles/creations.css'
 
 function Creations()
 {   
-
+    const listeInfos = [
+        { titre: "1. Patisserie", description: "Découvrez nos créations sucrées, alliant saveurs et esthétique.", source: patisserie },
+        { titre: "2. Précision", description: "Chaque plat est préparé avec une attention méticuleuse aux détails.", source: precision },
+        { titre: "3. Sauce", description: "Nos sauces maison ajoutent une touche unique à chaque création.", source: sauce },
+        { titre: "4. Cuisson", description: "Des plats cuisinés à la perfection pour ravir vos papilles.", source: cooked },
+        { titre: "5. Finition", description: "La présentation finale de nos plats est un art en soi.", source: finished }
+    ];
+    const listesComposants = [];
+    for(let i = 0; i < listeInfos.length; i++) {
+        listesComposants.push(
+            <BricMasonry
+                key={i}
+                source={listeInfos[i].source}
+                titre={listeInfos[i].titre}
+                description={listeInfos[i].description}
+            />
+        );
+    }
     return(
         <>
             <section class="creations">
@@ -26,11 +43,7 @@ function Creations()
                         </div>
                         <div className="grid-creations">
 
-                            <BricMasonry source={patisserie} />
-                            <BricMasonry source={precision}/>
-                            <BricMasonry source={sauce}/>
-                            <BricMasonry source={cooked}/>
-                            <BricMasonry source={finished}/>
+                            {listesComposants}
                         </div>
                     </div>
                 </div>
