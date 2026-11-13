@@ -2,6 +2,7 @@
   --noir: #0B0B0A;
   --noir_charbon: #151412;
   --doree: #C9A227;
+  --doree_profond: #A17C27;
   --doree_hover: #E2C15B;
   --blanc_ivoire: #F4F0E8;
   --gris: #918C83;
@@ -163,8 +164,19 @@ h3{
     letter-spacing: 2px;
   } 
 
-  .infos-overlay{
-    opacity: 0;
+  .overlay{
+    display:none;
+  }
+
+  .infos-bric{
+    display:block;
+  }
+
+}
+
+@media(min-width: 769px){
+  .infos-bric{
+    display:none;
   }
 }
 
@@ -186,6 +198,25 @@ h3{
   text-transform: uppercase;
 
 }
+
+.infos-bric{
+  background-color: var(--doree_profond);
+  text-align: left;
+  padding: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+
+.bric-text{
+  margin: 0.5rem 0;
+}
+
+
+
+
+
+
+
 
 /*Animations*/
 

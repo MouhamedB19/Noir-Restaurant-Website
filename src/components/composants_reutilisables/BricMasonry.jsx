@@ -1,8 +1,9 @@
 import useReveal from "../fonctions_utilitaires/useReveal";
 import useLoaded from "../fonctions_utilitaires/useLoaded";
-import InfosOverlay from "./InfosOverlay";
+import {InfosOverlay,InfosBric} from "./InfosOverlay";
 
-function BricMasonry({source, titre, description})
+
+function BricMasonry({source, titre, description, description_courte})
 {
     const [elementConcerne,visible] = useReveal();
     const loaded = useLoaded(source);
@@ -13,6 +14,7 @@ function BricMasonry({source, titre, description})
                     <InfosOverlay titre={titre} description={description} />
                 </div>
                 <img src={source} alt="" />
+                <InfosBric titre={titre} description={description_courte} />
             </div>
         </>
     );

@@ -25,6 +25,7 @@
     border-radius: 5%;
     transition: transform 0.3s ease;
     opacity: 0;
+    border-radius: 5%;
 }
 
 
@@ -46,5 +47,9 @@
 @media(max-width: 768px){
     .grid-creations{
         column-gap: 0.5rem;
+        columns: 2;
+    }
+    .creation-item {
+        width: 100%;
     }
 }
