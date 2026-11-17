@@ -8,10 +8,14 @@ import BricMasonry from './composants_reutilisables/BricMasonry';
 
 import '../styles/creations.css'
 
+import useReveal from './fonctions_utilitaires/useReveal';
+
 
 
 function Creations()
 {   
+    const [element, visible] = useReveal();
+    
     const listeInfos = [
         { titre: "1. Patisserie", description: "Découvrez nos créations sucrées, alliant saveurs et esthétique.", description_courte: "Découvrez nos créations sucrées",source: patisserie },
         { titre: "2. Précision", description: "Chaque plat est préparé avec une attention méticuleuse aux détails.", description_courte: "Précision dans la préparation", source: precision },
@@ -36,7 +40,7 @@ function Creations()
             <section class="creations">
                 <div className="box-container container">
                     <div className="creations-content">
-                        <div className="box-title">
+                        <div className={`box-title ${visible ? "animation-bottom" : ""}`} ref={element}>
                             <h2 className="title-section main-title">
                                 <h2 className="numero">02.</h2>
                                 Les créations du chef

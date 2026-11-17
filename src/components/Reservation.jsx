@@ -3,16 +3,22 @@ import '../styles/reservation.css'
 import BoutonDore from './composants_reutilisables/BoutonDore'
 import Temps from './fonctions_utilitaires/Temps.jsx'
 
+import useReveal from './fonctions_utilitaires/useReveal.js'
+import useLoaded from './fonctions_utilitaires/useLoaded.js'
 
 function Reservation()
 {
+    const [imageRef, imageVisible] = useReveal();
+    const imageChargee = useLoaded(ReservationImage);
+    const [formRef, formVisible] = useReveal();
+
     return(
         <>
             <section className="reservations">
-                <div className="image-part">
+                <div className={`image-part ${imageVisible && imageChargee ? "animation-left" : ""}`} ref={imageRef}>
                     <img src={ReservationImage} alt=""/>
                 </div>
-                <div className="reservation-part">
+                <div className={`reservation-part ${formVisible ? "animation-right" : ""}`} ref={formRef}>
                     <div className="box-introduction">
                         <h2 className="title-section main-title">
                             <h2 className="numero">04.</h2>

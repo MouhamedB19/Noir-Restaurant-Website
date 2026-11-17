@@ -1,12 +1,16 @@
 import Signature from "../assets/dinning_signature.jpg"
 import Chef from "../assets/chef_serving.jpg"
 import Private from "../assets/private_dinning.jpg"
+
 import "../styles/experiences.css"
-import Decouvrir from "./composants_reutilisables/Decouvrir"
+
 import BricExperiences from "./composants_reutilisables/BricExperiences"
+
+import useReveal from "./fonctions_utilitaires/useReveal"
 
 function Experiences()
 {
+    const [element, visible] = useReveal();
     const experiences = [
         {
             titre: "Dîner signature",
@@ -27,6 +31,7 @@ function Experiences()
             taille: "big"
         }
     ];
+    
     const listeExperiences = [];
     for(let i = 0; i < experiences.length; i++) {
         listeExperiences.push(
@@ -43,7 +48,7 @@ function Experiences()
         <>  
             <section className="experiences">
                 <div className="box-experiences container">
-                    <div className="box-title-experiences">
+                    <div className={`box-title-experiences ${visible ? "animation-bottom" : ""}`} ref={element}>
                         <h2 className="title-section">
                             <h2 className="numero">03.</h2>
                             Expériences
