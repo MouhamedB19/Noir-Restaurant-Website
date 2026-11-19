@@ -1,11 +1,14 @@
 import ReservationImage from '../assets/reservation_image.png'
-import '../styles/reservation.css'
+
 import BoutonDore from './composants_reutilisables/BoutonDore'
 import Temps from './fonctions_utilitaires/Temps.jsx'
 
 import useReveal from './fonctions_utilitaires/useReveal.js'
 import useLoaded from './fonctions_utilitaires/useLoaded.js'
+import TitreSection from './composants_reutilisables/TitreSection'
 
+
+import '../styles/reservation.css'
 function Reservation()
 {
     const [imageRef, imageVisible] = useReveal();
@@ -20,14 +23,7 @@ function Reservation()
                 </div>
                 <div className={`reservation-part ${formVisible ? "animation-right" : ""}`} ref={formRef}>
                     <div className="box-introduction">
-                        <h2 className="title-section main-title">
-                            <h2 className="numero">04.</h2>
-                            Réservations
-                        </h2>
-                        <span>Votre table vous attend. </span>
-                        <span>
-                            Une expérience pensée dans les moindres détails, à découvrir le temps d'un dîner.
-                        </span>
+                        <TitreSection titre="Réservations" numero={4} sousTitre="Votre table vous attend. Une expérience pensée dans les moindres détails, à découvrir le temps d'un dîner." />
                     </div>
                     <div className="box-reservation">
                         <h3>Réserver une table</h3>

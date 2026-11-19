@@ -22,13 +22,7 @@
     
 }
 
-.animation-left{
-    animation: spawnByLeft 1.5s ease-in-out forwards;
-}
 
-.animation-right{
-    animation: spawnByRight 1.5s ease-in-out forwards;
-}
 
 .substitute{
     display: none;

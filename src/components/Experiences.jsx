@@ -7,6 +7,7 @@ import "../styles/experiences.css"
 import BricExperiences from "./composants_reutilisables/BricExperiences"
 
 import useReveal from "./fonctions_utilitaires/useReveal"
+import TitreSection from "./composants_reutilisables/TitreSection"
 
 function Experiences()
 {
@@ -49,13 +50,7 @@ function Experiences()
             <section className="experiences">
                 <div className="box-experiences container">
                     <div className={`box-title-experiences ${visible ? "animation-bottom" : ""}`} ref={element}>
-                        <h2 className="title-section">
-                            <h2 className="numero">03.</h2>
-                            Expériences
-                        </h2>
-                        <span>
-                            Des moments pensés comme des créations. Parce qu'un dîner ne se résume pas à ce qui se trouve dans l'assiette.
-                        </span>
+                        <TitreSection titre="Expériences" numero={3} sousTitre="Des moments pensés comme des créations. Parce qu'un dîner ne se résume pas à ce qui se trouve dans l'assiette." />
                     </div>
                     <div className="content-experiences">
                         {listeExperiences}

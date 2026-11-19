@@ -10,6 +10,7 @@ import '../styles/creations.css'
 
 import useReveal from './fonctions_utilitaires/useReveal';
 
+import TitreSection from './composants_reutilisables/TitreSection';
 
 
 function Creations()
@@ -41,10 +42,7 @@ function Creations()
                 <div className="box-container container">
                     <div className="creations-content">
                         <div className={`box-title ${visible ? "animation-bottom" : ""}`} ref={element}>
-                            <h2 className="title-section main-title">
-                                <h2 className="numero">02.</h2>
-                                Les créations du chef
-                            </h2>
+                            <TitreSection titre="Les créations du chef" numero={2}/>
                         </div>
                         <div className="grid-creations">
 

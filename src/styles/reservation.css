@@ -8,6 +8,7 @@
 .image-part,.reservation-part{
     flex: 1;
     min-width: 0;
+    opacity: 0;
 }
 
 .image-part img{

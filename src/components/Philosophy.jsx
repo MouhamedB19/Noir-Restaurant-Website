@@ -3,6 +3,7 @@ import dishPhilosophy from '../assets/dish_philosophy.jpg'
 import useReveal from './fonctions_utilitaires/useReveal'
 import useLoaded from './fonctions_utilitaires/useLoaded'
 
+import TitreSection from './composants_reutilisables/TitreSection'
 
 function Philosophy() {
     const [elementGauche, visibleGauche] = useReveal();
@@ -14,10 +15,7 @@ function Philosophy() {
             <section className="philosophy">
                 <div className="box-philosophy container">
                     <div className={`philosophy-content ${visibleGauche && imageChargee ? "animation-left": ""}`} ref={elementGauche}>
-                        <h2 className="title-section main-title"> {/* Rappel: créer un composant réutilisable pour title-section*/}
-                            <h2 className="numero">01.</h2>
-                            Notre philosophie
-                        </h2>
+                        <TitreSection titre="Notre philosophie" numero={1}/>
                         <h3>
                             L'essentiel est dans ce que l'on choisit
                         </h3>
