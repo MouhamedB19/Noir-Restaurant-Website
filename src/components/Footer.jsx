@@ -13,12 +13,12 @@ function Footer()
         <>
             <footer className="the-footer">
                 <div className="infos-grid">
-                    <div className="infos-col">
+                    <div className="infos-col animation-left">
                         <h3 className="titre-part">Noir</h3>
                         <span>Restaurant gastronomique</span>
                         <span>Paris</span>
                     </div>
-                    <div className="infos-col">
+                    <div className="infos-col animation-bottom">
                         <h3 className="titre-part">Navigation</h3>
                         <ul>
                             <li><a href="#philosophie">Notre philosophie</a></li>
@@ -27,7 +27,7 @@ function Footer()
                             <li><a href="#reservations">Réservations</a></li>
                         </ul>
                     </div>
-                    <div className="infos-col">
+                    <div className="infos-col animation-right">
                         <div className="contact">
                             <h3 className="titre-part">Contact</h3>
                             <div className="infos">
