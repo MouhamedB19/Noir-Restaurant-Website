@@ -31,9 +31,20 @@ function Header() {
             stroke-width="1.5"
             stroke-linecap="round"
           >
-            <path d="M3 6H21" />
-            <path d="M3 12H21" />
-            <path d="M3 18H21" />
+            {!menuOuvert ? (
+              <>
+                <path d="M3 6H21" />
+                <path d="M3 12H21" />
+                <path d="M3 18H21" />
+              </>
+            ) : (
+              <path
+                d="M5 5L19 19M19 5L5 19"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            )}
           </svg>
         </button>
       </header>
