@@ -5,7 +5,7 @@ function MenuBurger({menu})
     return(
         <>
             {menu &&
-                (<div className="burger-container">
+                (<div className="burger-container animation-bottom">
                     <div className="burger-content">
                         <ul className="nav-list">
                             <li className="chosen"><a href="#">Accueil</a></li>
