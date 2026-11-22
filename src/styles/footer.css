@@ -28,6 +28,10 @@
     flex-direction: column;
 }
 
+.infos-col{
+    opacity: 0;
+}
+
 
 .infos-col ul{
     flex-direction: column;

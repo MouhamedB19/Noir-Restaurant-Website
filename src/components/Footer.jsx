@@ -1,5 +1,6 @@
 import '../styles/footer.css'
 import Temps from './fonctions_utilitaires/Temps.jsx'
+import useReveal from './fonctions_utilitaires/useReveal.js'
 
 function Footer()
 {
@@ -9,16 +10,17 @@ function Footer()
     const jours_horaires = import.meta.env.VITE_RESTAURANT_JOURS_HORAIRES;
     const heures_horaires = import.meta.env.VITE_RESTAURANT_HEURES_HORAIRES;
 
+    const [columnRef,visible] = useReveal();
     return(
         <>
             <footer className="the-footer">
                 <div className="infos-grid">
-                    <div className="infos-col animation-left">
+                    <div className={`infos-col ${visible ? 'animation-left':''}`} ref={columnRef}>
                         <h3 className="titre-part">Noir</h3>
                         <span>Restaurant gastronomique</span>
                         <span>Paris</span>
                     </div>
-                    <div className="infos-col animation-bottom">
+                    <div className={`infos-col ${visible ? 'animation-bottom':''}`} ref={columnRef}>
                         <h3 className="titre-part">Navigation</h3>
                         <ul>
                             <li><a href="#philosophie">Notre philosophie</a></li>
@@ -27,7 +29,7 @@ function Footer()
                             <li><a href="#reservations">Réservations</a></li>
                         </ul>
                     </div>
-                    <div className="infos-col animation-right">
+                    <div className={`infos-col ${visible ? 'animation-right':''}`} ref={columnRef}>
                         <div className="contact">
                             <h3 className="titre-part">Contact</h3>
                             <div className="infos">
