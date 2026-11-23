@@ -31,7 +31,6 @@
 }
 
 
-
 .card-experiences{
     margin: 0.5rem;
     height: 40vh;
@@ -54,6 +53,10 @@
 
 .card-experiences:hover .overlay{
     opacity: 1;
+}
+
+.card-experiences:hover img{
+    animation: zoom 950ms ease forwards;
 }
 
 .label-section{

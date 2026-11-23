@@ -8,7 +8,7 @@ function BricExperiences({titre, description, image, taille}) {
     return(
         <>
             <div className={`card-experiences ${taille} ${visible && loaded ? 'animation-bottom': ''}`}  ref={elementConcerne}>
-                <div className="overlay">
+                <div className="overlay overlay-experience">
                     <div className="label-section">
                         <h3 className="label">{titre}</h3>
                         <span>{description}</span>

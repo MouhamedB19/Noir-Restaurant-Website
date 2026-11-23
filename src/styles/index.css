@@ -187,6 +187,10 @@ h3{
     display:none;
   }
 
+  .overlay-experience{
+    display:block;
+  }
+
   .infos-bric{
     display:block;
   }
