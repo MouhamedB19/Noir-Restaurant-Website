@@ -65,7 +65,6 @@ body {
   color: var(--blanc_ivoire);
   font-family: var(--manrope);
   animation-duration: 600ms;
-  animation-delay: 100ms;
 }
 
 *,*::before,*::after{
@@ -119,7 +118,7 @@ h3{
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 5%;
-
+  z-index: 2;
 }
 
 .btn-hero{
@@ -176,7 +175,6 @@ h3{
 @media(max-width: 768px){
   *{
     animation-duration: 900ms;
-    animation-delay: 150ms;
   }
 
   .main-title{
@@ -279,6 +277,15 @@ h3{
   to{
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes zoom{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
   }
 }
 

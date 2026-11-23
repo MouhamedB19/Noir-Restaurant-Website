@@ -13,7 +13,7 @@ function BricMasonry({source, titre, description, description_courte})
                 <div className="overlay">
                     <InfosOverlay titre={titre} description={description} />
                 </div>
-                <img src={source} alt="" />
+                <img src={source} alt="" className="img-masonry"/>
                 <InfosBric titre={titre} description={description_courte} />
             </div>
         </>

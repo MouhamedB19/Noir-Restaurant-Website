@@ -23,15 +23,15 @@
     position:relative;
     overflow: hidden;
     border-radius: 5%;
-    transition: transform 0.3s ease;
+    
     opacity: 0;
-    border-radius: 5%;
 }
 
 
-.creation-item:hover{
-    transform: scale(0.95);
+.creation-item:hover .img-masonry{
+    animation: zoom 950ms ease forwards;
 }
+
 .creation-item:hover .overlay{
     opacity: 1;
 }
