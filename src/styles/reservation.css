@@ -80,7 +80,10 @@
     outline-offset: 2px;
 }
 
-
+.champ-reservation:focus{
+    outline: none;
+    border: 1px solid var(--doree);
+}
 
 
 .input-item label{
