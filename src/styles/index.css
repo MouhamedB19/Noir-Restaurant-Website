@@ -4,6 +4,7 @@
   --doree: #C9A227;
   --doree_profond: #A17C27;
   --doree_hover: #E2C15B;
+  --doree_clair: #F1D16A;
   --blanc_ivoire: #F4F0E8;
   --gris: #918C83;
   --noir_overlay: rgba(0,0,0,0.5);
@@ -244,6 +245,7 @@ h3{
 
 .bric-text{
   margin: 0.5rem 0;
+  color: var(--doree_clair);
 }
 
 

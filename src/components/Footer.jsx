@@ -10,17 +10,20 @@ function Footer()
     const jours_horaires = import.meta.env.VITE_RESTAURANT_JOURS_HORAIRES;
     const heures_horaires = import.meta.env.VITE_RESTAURANT_HEURES_HORAIRES;
 
-    const [columnRef,visible] = useReveal();
+    const [column1Ref,visible1] = useReveal();
+    const [column2Ref,visible2] = useReveal();    
+    const [column3Ref,visible3] = useReveal();
+
     return(
         <>
             <footer className="the-footer">
                 <div className="infos-grid">
-                    <div className={`infos-col ${visible ? 'animation-left':''}`} ref={columnRef}>
+                    <div className={`infos-col ${visible1 ? 'animation-left':''}`} ref={column1Ref}>
                         <h3 className="titre-part">Noir</h3>
                         <span>Restaurant gastronomique</span>
                         <span>Paris</span>
                     </div>
-                    <div className={`infos-col ${visible ? 'animation-bottom':''}`} ref={columnRef}>
+                    <div className={`infos-col ${visible2 ? 'animation-bottom':''}`} ref={column2Ref}>
                         <h3 className="titre-part">Navigation</h3>
                         <ul>
                             <li><a href="#philosophie">Notre philosophie</a></li>
@@ -29,7 +32,7 @@ function Footer()
                             <li><a href="#reservations">Réservations</a></li>
                         </ul>
                     </div>
-                    <div className={`infos-col ${visible ? 'animation-right':''}`} ref={columnRef}>
+                    <div className={`infos-col ${visible3 ? 'animation-right':''}`} ref={column3Ref}>
                         <div className="contact">
                             <h3 className="titre-part">Contact</h3>
                             <div className="infos">

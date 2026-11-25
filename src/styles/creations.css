@@ -27,10 +27,13 @@
     opacity: 0;
 }
 
-
-.creation-item:hover .img-masonry{
+@media(min-width: 769px){
+  .creation-item:hover .img-masonry{
     animation: zoom 950ms ease forwards;
+  }
+      
 }
+
 
 .creation-item:hover .overlay{
     opacity: 1;
