@@ -6,7 +6,7 @@ import Temps from './fonctions_utilitaires/Temps.jsx'
 import useReveal from './fonctions_utilitaires/useReveal.js'
 import useLoaded from './fonctions_utilitaires/useLoaded.js'
 import TitreSection from './composants_reutilisables/TitreSection'
-
+import Input from './composants_reutilisables/Input'
 
 import '../styles/reservation.css'
 function Reservation()
@@ -29,18 +29,9 @@ function Reservation()
                         <h3>Réserver une table</h3>
                         <form className="form-reservation">
                             <div className="infos-input">
-                                <div className="input-item">
-                                    <label htmlFor="date">Date</label> <br/> 
-                                    <input type="date" name="date" className="champ-reservation" value={Temps.DateAujourdhui()}/>
-                                </div>
-                                <div className="input-item">
-                                    <label htmlFor="convives">Convives</label><br/>
-                                    <input type="number" name="convives" className="champ-reservation" min="1" max="20" value="2" />  
-                                </div>
-                                <div className="input-item">
-                                    <label htmlFor="heure">Heure</label><br/>
-                                    <input type="time" name="heure" className="champ-reservation" value={"20:00"}/>
-                                </div>
+                                <Input label={"Date de la réservation"} nameInput={"date_reservation"} typeInput={"date"} valeur={Temps.DateAujourdhui()}/>
+                                <Input label={"Nombre de convives"} typeInput={"number"} nameInput={"nombre_convives"} valeurMin={1} valeurMax={20}/>
+                                <Input label={"Heure de la réservation"} typeInput={"time"} nameInput={"heure_reservation"} valeur={"20:00"} />
                                 <div className="input-item">                  
                                     <label htmlFor="occasion">Occasion</label> <br />
                                     <select name="occasions" className="champ-reservation">

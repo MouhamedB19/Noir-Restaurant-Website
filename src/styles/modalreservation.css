@@ -1,0 +1,42 @@
+.back-modal{
+    background-color: var(--noir_overlay);
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+
+.box-modal{
+    background-color: var(--noir);
+    width: 40vw;
+    border-radius: 5%;
+    padding: 1rem;
+}
+
+.box-modal h3{
+    margin: 0.8rem;
+    font-size: 1.8rem;
+}
+
+.icon-part{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-btn{
+    background-color: var(--noir);
+    border: none;
+    cursor: pointer;
+}
+
+
+.form-modal .input-item{
+    padding: 0.5rem 0;
+}
+
+.form-modal .btn-gold{
+    margin: 1rem 0;
+}

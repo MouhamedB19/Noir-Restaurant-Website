@@ -6,6 +6,8 @@ import Experiences from './components/Experiences.jsx'
 import Reservation from './components/Reservation.jsx'
 import Footer from './components/Footer.jsx'
 
+import ModalReservation from './components/composants_reutilisables/Modals/ModalReservation'
+
 function App() {
 
   return (
@@ -17,6 +19,7 @@ function App() {
       <Experiences/>
       <Reservation/>
       <Footer/>
+      <ModalReservation/>
     </>
   )
 }
