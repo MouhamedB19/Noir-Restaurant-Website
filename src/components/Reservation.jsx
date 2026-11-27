@@ -14,7 +14,25 @@ function Reservation()
     const [imageRef, imageVisible] = useReveal();
     const imageChargee = useLoaded(ReservationImage);
     const [formRef, formVisible] = useReveal();
+    const listeInfosInputs = [
+        {label: "Date de réservation", name: "date_reservation", type: "text", valeurMin: null,valeurMax: null},                
 
+        {label: "Nombre de convives", name: "nombre_convives", type: "number", valeurMin: 1,valeurMax: 20},
+
+        {label: "Heure de réservation", name: "heure_reservation", type: "time", valeurMin: null,valeurMax: null}
+    ];
+    const listeInputs = [];
+    for(let i = 0;i < listeInfosInputs.length;i++)
+    {
+        listeInputs.push(
+            <Input label={listeInfosInputs[i].label} 
+            nameInput={listeInfosInputs[i].name} 
+            typeInput={listeInfosInputs[i].type}
+            valeurMin={listeInfosInputs[i].valeurMin}
+            valeurMax={listeInfosInputs[i].valeurMax}
+            />
+        );
+    }
     return(
         <>
             <section className="reservations">
@@ -29,9 +47,7 @@ function Reservation()
                         <h3>Réserver une table</h3>
                         <form className="form-reservation">
                             <div className="infos-input">
-                                <Input label={"Date de la réservation"} nameInput={"date_reservation"} typeInput={"date"} valeur={Temps.DateAujourdhui()}/>
-                                <Input label={"Nombre de convives"} typeInput={"number"} nameInput={"nombre_convives"} valeurMin={1} valeurMax={20}/>
-                                <Input label={"Heure de la réservation"} typeInput={"time"} nameInput={"heure_reservation"} valeur={"20:00"} />
+                                {listeInputs}
                                 <div className="input-item">                  
                                     <label htmlFor="occasion">Occasion</label> <br />
                                     <select name="occasions" className="champ-reservation">
